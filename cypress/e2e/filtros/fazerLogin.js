@@ -1,11 +1,3 @@
-export function login(){
-    cy.visit('https://homologation.varstation.varsomics-sandbox.com/#/login');
-    cy.get('[data-testid="email"]').type('fake.automatizado@varsomics.com');
-    cy.get('[data-testid="password"]').type('Vars@123');
-    cy.get('[data-testid="login-button"] > .mat-button-wrapper').should('be.exist').click();
-}
-
-
 export function modalFiltos(nomeAmostra){
     cy.get('[data-testid="routines-button"] > .mat-button-wrapper').click(); // ROTINA
     cy.get('[data-testid="search-input"]').type(nomeAmostra); // busca a amostra desejada
