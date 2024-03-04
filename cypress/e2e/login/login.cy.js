@@ -106,7 +106,7 @@ describe('Test Cases - LOGIN', () => {
         });
     });
 
-    describe.only('Scenario 6- Successfully login when the user puts the email and password correctly', () => {
+    describe('Scenario 6- Successfully login when the user puts the email and password correctly', () => {
         context('GIVEN user is on the login screen', () => {
             context('WHEN he puts the email AND password correctly AND clicks on "Entrar" button', () => {
                 beforeEach(() => {
